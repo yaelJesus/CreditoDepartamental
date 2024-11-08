@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CreditoDepartamental.Properties;
+using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -98,6 +99,19 @@ namespace CreditoDepartamental
                     Hide();
                 }
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Singup singup = new Singup();
+            singup.ShowDialog();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            Hide();
         }
     }
 }

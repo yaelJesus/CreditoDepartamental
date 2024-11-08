@@ -28,27 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.PanelContenedorPrincipal = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.PanelMenu = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.PictureBox();
+            this.PanelCreditoSubMenu = new System.Windows.Forms.Panel();
+            this.btnVencidos = new System.Windows.Forms.Button();
+            this.btnAumentar = new System.Windows.Forms.Button();
+            this.btnSolicitud = new System.Windows.Forms.Button();
+            this.btnCredito = new System.Windows.Forms.Button();
+            this.PanelCategoriaSubMenu = new System.Windows.Forms.Panel();
+            this.btnElectronicos = new System.Windows.Forms.Button();
+            this.btnDeportes = new System.Windows.Forms.Button();
+            this.btnDamas = new System.Windows.Forms.Button();
+            this.btnCategoria = new System.Windows.Forms.Button();
+            this.PanelLogo = new System.Windows.Forms.Panel();
             this.PanelBarraTitulo = new System.Windows.Forms.Panel();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnNormal = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.tmrExpandirMenu = new System.Windows.Forms.Timer(this.components);
-            this.tmrContraerMenu = new System.Windows.Forms.Timer(this.components);
+            this.btnProximos = new System.Windows.Forms.Button();
+            this.btnCorte = new System.Windows.Forms.Button();
             this.PanelContenedorPrincipal.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
             this.PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
+            this.PanelCreditoSubMenu.SuspendLayout();
+            this.PanelCategoriaSubMenu.SuspendLayout();
+            this.PanelLogo.SuspendLayout();
             this.PanelBarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).BeginInit();
@@ -59,7 +69,6 @@
             // 
             this.PanelContenedorPrincipal.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.PanelContenedorPrincipal.Controls.Add(this.panelContenedor);
-            this.PanelContenedorPrincipal.Controls.Add(this.PanelMenu);
             this.PanelContenedorPrincipal.Controls.Add(this.PanelBarraTitulo);
             this.PanelContenedorPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelContenedorPrincipal.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -71,89 +80,203 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.panelContenedor.Controls.Add(this.PanelMenu);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(230, 40);
+            this.panelContenedor.Location = new System.Drawing.Point(0, 40);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(852, 513);
+            this.panelContenedor.Size = new System.Drawing.Size(1082, 513);
             this.panelContenedor.TabIndex = 1;
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.PanelMenu.Controls.Add(this.button4);
-            this.PanelMenu.Controls.Add(this.button3);
-            this.PanelMenu.Controls.Add(this.button2);
-            this.PanelMenu.Controls.Add(this.button1);
-            this.PanelMenu.Controls.Add(this.btnMenu);
+            this.PanelMenu.AutoScroll = true;
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(41)))), ((int)(((byte)(46)))));
+            this.PanelMenu.Controls.Add(this.PanelCreditoSubMenu);
+            this.PanelMenu.Controls.Add(this.btnCredito);
+            this.PanelMenu.Controls.Add(this.PanelCategoriaSubMenu);
+            this.PanelMenu.Controls.Add(this.btnCategoria);
+            this.PanelMenu.Controls.Add(this.PanelLogo);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelMenu.Location = new System.Drawing.Point(0, 40);
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(230, 513);
+            this.PanelMenu.Size = new System.Drawing.Size(255, 513);
             this.PanelMenu.TabIndex = 0;
             // 
-            // button4
+            // PanelCreditoSubMenu
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(0, 212);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(230, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.PanelCreditoSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.PanelCreditoSubMenu.Controls.Add(this.btnCorte);
+            this.PanelCreditoSubMenu.Controls.Add(this.btnProximos);
+            this.PanelCreditoSubMenu.Controls.Add(this.btnVencidos);
+            this.PanelCreditoSubMenu.Controls.Add(this.btnAumentar);
+            this.PanelCreditoSubMenu.Controls.Add(this.btnSolicitud);
+            this.PanelCreditoSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelCreditoSubMenu.Location = new System.Drawing.Point(0, 315);
+            this.PanelCreditoSubMenu.Name = "PanelCreditoSubMenu";
+            this.PanelCreditoSubMenu.Size = new System.Drawing.Size(234, 205);
+            this.PanelCreditoSubMenu.TabIndex = 9;
             // 
-            // button3
+            // btnVencidos
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(0, 166);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnVencidos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVencidos.FlatAppearance.BorderSize = 0;
+            this.btnVencidos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVencidos.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVencidos.ForeColor = System.Drawing.Color.LightGray;
+            this.btnVencidos.Location = new System.Drawing.Point(0, 80);
+            this.btnVencidos.Name = "btnVencidos";
+            this.btnVencidos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnVencidos.Size = new System.Drawing.Size(234, 40);
+            this.btnVencidos.TabIndex = 2;
+            this.btnVencidos.Text = "Pagos Vencidos";
+            this.btnVencidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVencidos.UseVisualStyleBackColor = true;
+            this.btnVencidos.Click += new System.EventHandler(this.btnVencidos_Click);
             // 
-            // button2
+            // btnAumentar
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(0, 120);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAumentar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAumentar.FlatAppearance.BorderSize = 0;
+            this.btnAumentar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAumentar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAumentar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAumentar.Location = new System.Drawing.Point(0, 40);
+            this.btnAumentar.Name = "btnAumentar";
+            this.btnAumentar.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnAumentar.Size = new System.Drawing.Size(234, 40);
+            this.btnAumentar.TabIndex = 1;
+            this.btnAumentar.Text = "Aumentar";
+            this.btnAumentar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAumentar.UseVisualStyleBackColor = true;
+            this.btnAumentar.Visible = false;
             // 
-            // button1
+            // btnSolicitud
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 74);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSolicitud.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSolicitud.FlatAppearance.BorderSize = 0;
+            this.btnSolicitud.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSolicitud.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSolicitud.ForeColor = System.Drawing.Color.LightGray;
+            this.btnSolicitud.Location = new System.Drawing.Point(0, 0);
+            this.btnSolicitud.Name = "btnSolicitud";
+            this.btnSolicitud.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnSolicitud.Size = new System.Drawing.Size(234, 40);
+            this.btnSolicitud.TabIndex = 0;
+            this.btnSolicitud.Text = "Solicitar";
+            this.btnSolicitud.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSolicitud.UseVisualStyleBackColor = true;
+            this.btnSolicitud.Click += new System.EventHandler(this.btnSolicitud_Click);
             // 
-            // btnMenu
+            // btnCredito
             // 
-            this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(190, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(40, 40);
-            this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.TabStop = false;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            this.btnCredito.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCredito.FlatAppearance.BorderSize = 0;
+            this.btnCredito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCredito.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCredito.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCredito.Location = new System.Drawing.Point(0, 270);
+            this.btnCredito.Name = "btnCredito";
+            this.btnCredito.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCredito.Size = new System.Drawing.Size(234, 45);
+            this.btnCredito.TabIndex = 8;
+            this.btnCredito.Text = "Credito";
+            this.btnCredito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCredito.UseVisualStyleBackColor = true;
+            this.btnCredito.Click += new System.EventHandler(this.btnCredito_Click);
+            // 
+            // PanelCategoriaSubMenu
+            // 
+            this.PanelCategoriaSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(39)))), ((int)(((byte)(46)))));
+            this.PanelCategoriaSubMenu.Controls.Add(this.btnElectronicos);
+            this.PanelCategoriaSubMenu.Controls.Add(this.btnDeportes);
+            this.PanelCategoriaSubMenu.Controls.Add(this.btnDamas);
+            this.PanelCategoriaSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelCategoriaSubMenu.Location = new System.Drawing.Point(0, 145);
+            this.PanelCategoriaSubMenu.Name = "PanelCategoriaSubMenu";
+            this.PanelCategoriaSubMenu.Size = new System.Drawing.Size(234, 125);
+            this.PanelCategoriaSubMenu.TabIndex = 7;
+            // 
+            // btnElectronicos
+            // 
+            this.btnElectronicos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnElectronicos.FlatAppearance.BorderSize = 0;
+            this.btnElectronicos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnElectronicos.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnElectronicos.ForeColor = System.Drawing.Color.LightGray;
+            this.btnElectronicos.Location = new System.Drawing.Point(0, 80);
+            this.btnElectronicos.Name = "btnElectronicos";
+            this.btnElectronicos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnElectronicos.Size = new System.Drawing.Size(234, 40);
+            this.btnElectronicos.TabIndex = 2;
+            this.btnElectronicos.Text = "Electrónicos";
+            this.btnElectronicos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnElectronicos.UseVisualStyleBackColor = true;
+            this.btnElectronicos.Click += new System.EventHandler(this.btnElectronicos_Click);
+            // 
+            // btnDeportes
+            // 
+            this.btnDeportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeportes.FlatAppearance.BorderSize = 0;
+            this.btnDeportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeportes.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeportes.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDeportes.Location = new System.Drawing.Point(0, 40);
+            this.btnDeportes.Name = "btnDeportes";
+            this.btnDeportes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnDeportes.Size = new System.Drawing.Size(234, 40);
+            this.btnDeportes.TabIndex = 1;
+            this.btnDeportes.Text = "Deportes";
+            this.btnDeportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeportes.UseVisualStyleBackColor = true;
+            this.btnDeportes.Click += new System.EventHandler(this.btnDeportes_Click);
+            // 
+            // btnDamas
+            // 
+            this.btnDamas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDamas.FlatAppearance.BorderSize = 0;
+            this.btnDamas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDamas.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDamas.ForeColor = System.Drawing.Color.LightGray;
+            this.btnDamas.Location = new System.Drawing.Point(0, 0);
+            this.btnDamas.Name = "btnDamas";
+            this.btnDamas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnDamas.Size = new System.Drawing.Size(234, 40);
+            this.btnDamas.TabIndex = 0;
+            this.btnDamas.Text = "Damas";
+            this.btnDamas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDamas.UseVisualStyleBackColor = true;
+            this.btnDamas.Click += new System.EventHandler(this.btnDamas_Click);
+            // 
+            // btnCategoria
+            // 
+            this.btnCategoria.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCategoria.FlatAppearance.BorderSize = 0;
+            this.btnCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoria.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoria.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnCategoria.Location = new System.Drawing.Point(0, 100);
+            this.btnCategoria.Name = "btnCategoria";
+            this.btnCategoria.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnCategoria.Size = new System.Drawing.Size(234, 45);
+            this.btnCategoria.TabIndex = 0;
+            this.btnCategoria.Text = "Categoría";
+            this.btnCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategoria.UseVisualStyleBackColor = true;
+            this.btnCategoria.Click += new System.EventHandler(this.btnCategoria_Click);
+            // 
+            // PanelLogo
+            // 
+            this.PanelLogo.Controls.Add(this.pbLogo);
+            this.PanelLogo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelLogo.Location = new System.Drawing.Point(0, 0);
+            this.PanelLogo.Name = "PanelLogo";
+            this.PanelLogo.Size = new System.Drawing.Size(234, 100);
+            this.PanelLogo.TabIndex = 6;
             // 
             // PanelBarraTitulo
             // 
-            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.PanelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(40)))), ((int)(((byte)(71)))));
             this.PanelBarraTitulo.Controls.Add(this.btnMinimizar);
             this.PanelBarraTitulo.Controls.Add(this.btnCerrar);
             this.PanelBarraTitulo.Controls.Add(this.btnNormal);
@@ -164,6 +287,18 @@
             this.PanelBarraTitulo.Size = new System.Drawing.Size(1082, 40);
             this.PanelBarraTitulo.TabIndex = 0;
             this.PanelBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelBarraTitulo_MouseDown);
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(234, 100);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 4;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
             // 
             // btnMinimizar
             // 
@@ -218,15 +353,37 @@
             this.btnMaximizar.TabStop = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
             // 
-            // tmrExpandirMenu
+            // btnProximos
             // 
-            this.tmrExpandirMenu.Interval = 15;
-            this.tmrExpandirMenu.Tick += new System.EventHandler(this.tmrExpandirMenu_Tick);
+            this.btnProximos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProximos.FlatAppearance.BorderSize = 0;
+            this.btnProximos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProximos.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProximos.ForeColor = System.Drawing.Color.LightGray;
+            this.btnProximos.Location = new System.Drawing.Point(0, 120);
+            this.btnProximos.Name = "btnProximos";
+            this.btnProximos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnProximos.Size = new System.Drawing.Size(234, 40);
+            this.btnProximos.TabIndex = 3;
+            this.btnProximos.Text = "Proximos Pagos";
+            this.btnProximos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProximos.UseVisualStyleBackColor = true;
             // 
-            // tmrContraerMenu
+            // btnCorte
             // 
-            this.tmrContraerMenu.Interval = 15;
-            this.tmrContraerMenu.Tick += new System.EventHandler(this.tmrContraerMenu_Tick);
+            this.btnCorte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCorte.FlatAppearance.BorderSize = 0;
+            this.btnCorte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCorte.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCorte.ForeColor = System.Drawing.Color.LightGray;
+            this.btnCorte.Location = new System.Drawing.Point(0, 160);
+            this.btnCorte.Name = "btnCorte";
+            this.btnCorte.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnCorte.Size = new System.Drawing.Size(234, 40);
+            this.btnCorte.TabIndex = 4;
+            this.btnCorte.Text = "Fecha de Corte";
+            this.btnCorte.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCorte.UseVisualStyleBackColor = true;
             // 
             // MenuPrincipal
             // 
@@ -237,12 +394,17 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(680, 500);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.PanelContenedorPrincipal.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
             this.PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
+            this.PanelCreditoSubMenu.ResumeLayout(false);
+            this.PanelCategoriaSubMenu.ResumeLayout(false);
+            this.PanelLogo.ResumeLayout(false);
             this.PanelBarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnNormal)).EndInit();
@@ -257,16 +419,23 @@
         private System.Windows.Forms.Panel PanelMenu;
         private System.Windows.Forms.Panel PanelBarraTitulo;
         private System.Windows.Forms.Panel panelContenedor;
-        private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer tmrExpandirMenu;
-        private System.Windows.Forms.Timer tmrContraerMenu;
         private System.Windows.Forms.PictureBox btnNormal;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Panel PanelLogo;
+        private System.Windows.Forms.Button btnCategoria;
+        private System.Windows.Forms.Panel PanelCategoriaSubMenu;
+        private System.Windows.Forms.Button btnElectronicos;
+        private System.Windows.Forms.Button btnDeportes;
+        private System.Windows.Forms.Button btnDamas;
+        private System.Windows.Forms.Button btnCredito;
+        private System.Windows.Forms.Panel PanelCreditoSubMenu;
+        private System.Windows.Forms.Button btnVencidos;
+        private System.Windows.Forms.Button btnAumentar;
+        private System.Windows.Forms.Button btnSolicitud;
+        private System.Windows.Forms.Button btnCorte;
+        private System.Windows.Forms.Button btnProximos;
     }
 }
