@@ -38,21 +38,21 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pbINE = new System.Windows.Forms.PictureBox();
             this.btnINE = new System.Windows.Forms.Button();
             this.btnDomicilio = new System.Windows.Forms.Button();
-            this.pbPDF = new System.Windows.Forms.PictureBox();
             this.lblSalary = new System.Windows.Forms.Label();
             this.lblDomicilio = new System.Windows.Forms.Label();
-            this.btnQutarPDF = new System.Windows.Forms.PictureBox();
             this.ofdArchivo = new System.Windows.Forms.OpenFileDialog();
-            this.btnQuitarINE = new System.Windows.Forms.PictureBox();
             this.btnSolicitud = new System.Windows.Forms.Button();
             this.dtpBornDate = new CreditoDepartamental.Properties.CustomDatePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.pbINE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPDF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnQutarPDF)).BeginInit();
+            this.btnQuitarINE = new System.Windows.Forms.PictureBox();
+            this.btnQutarPDF = new System.Windows.Forms.PictureBox();
+            this.pbPDF = new System.Windows.Forms.PictureBox();
+            this.pbINE = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuitarINE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQutarPDF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPDF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbINE)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPhone
@@ -182,18 +182,6 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Solicitud de Credito";
             // 
-            // pbINE
-            // 
-            this.pbINE.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbINE.Image = global::CreditoDepartamental.Properties.Resources.ine;
-            this.pbINE.Location = new System.Drawing.Point(60, 175);
-            this.pbINE.Name = "pbINE";
-            this.pbINE.Size = new System.Drawing.Size(276, 142);
-            this.pbINE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbINE.TabIndex = 27;
-            this.pbINE.TabStop = false;
-            this.pbINE.Visible = false;
-            // 
             // btnINE
             // 
             this.btnINE.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -220,7 +208,7 @@
             this.btnDomicilio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnDomicilio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(70)))), ((int)(((byte)(126)))));
             this.btnDomicilio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDomicilio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDomicilio.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDomicilio.ForeColor = System.Drawing.Color.LightGray;
             this.btnDomicilio.Location = new System.Drawing.Point(417, 322);
             this.btnDomicilio.Name = "btnDomicilio";
@@ -229,18 +217,6 @@
             this.btnDomicilio.Text = "Cargar Comprobante de domicilio";
             this.btnDomicilio.UseVisualStyleBackColor = false;
             this.btnDomicilio.Click += new System.EventHandler(this.btnDomicilio_Click);
-            // 
-            // pbPDF
-            // 
-            this.pbPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pbPDF.Image = ((System.Drawing.Image)(resources.GetObject("pbPDF.Image")));
-            this.pbPDF.Location = new System.Drawing.Point(509, 181);
-            this.pbPDF.Name = "pbPDF";
-            this.pbPDF.Size = new System.Drawing.Size(62, 75);
-            this.pbPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPDF.TabIndex = 30;
-            this.pbPDF.TabStop = false;
-            this.pbPDF.Visible = false;
             // 
             // lblSalary
             // 
@@ -270,37 +246,9 @@
             this.lblDomicilio.Text = "Comprobante de domicilio";
             this.lblDomicilio.Visible = false;
             // 
-            // btnQutarPDF
-            // 
-            this.btnQutarPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQutarPDF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQutarPDF.Image = ((System.Drawing.Image)(resources.GetObject("btnQutarPDF.Image")));
-            this.btnQutarPDF.Location = new System.Drawing.Point(684, 272);
-            this.btnQutarPDF.Name = "btnQutarPDF";
-            this.btnQutarPDF.Size = new System.Drawing.Size(22, 19);
-            this.btnQutarPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnQutarPDF.TabIndex = 33;
-            this.btnQutarPDF.TabStop = false;
-            this.btnQutarPDF.Visible = false;
-            this.btnQutarPDF.Click += new System.EventHandler(this.btnQutarPDF_Click);
-            // 
             // ofdArchivo
             // 
             this.ofdArchivo.FileName = "openFileDialog1";
-            // 
-            // btnQuitarINE
-            // 
-            this.btnQuitarINE.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnQuitarINE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnQuitarINE.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitarINE.Image")));
-            this.btnQuitarINE.Location = new System.Drawing.Point(314, 175);
-            this.btnQuitarINE.Name = "btnQuitarINE";
-            this.btnQuitarINE.Size = new System.Drawing.Size(22, 19);
-            this.btnQuitarINE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnQuitarINE.TabIndex = 34;
-            this.btnQuitarINE.TabStop = false;
-            this.btnQuitarINE.Visible = false;
-            this.btnQuitarINE.Click += new System.EventHandler(this.btnQuitarINE_Click);
             // 
             // btnSolicitud
             // 
@@ -334,6 +282,58 @@
             this.dtpBornDate.TabIndex = 25;
             this.dtpBornDate.TextColor = System.Drawing.Color.White;
             // 
+            // btnQuitarINE
+            // 
+            this.btnQuitarINE.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnQuitarINE.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuitarINE.Image = ((System.Drawing.Image)(resources.GetObject("btnQuitarINE.Image")));
+            this.btnQuitarINE.Location = new System.Drawing.Point(314, 175);
+            this.btnQuitarINE.Name = "btnQuitarINE";
+            this.btnQuitarINE.Size = new System.Drawing.Size(22, 19);
+            this.btnQuitarINE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnQuitarINE.TabIndex = 34;
+            this.btnQuitarINE.TabStop = false;
+            this.btnQuitarINE.Visible = false;
+            this.btnQuitarINE.Click += new System.EventHandler(this.btnQuitarINE_Click);
+            // 
+            // btnQutarPDF
+            // 
+            this.btnQutarPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnQutarPDF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQutarPDF.Image = ((System.Drawing.Image)(resources.GetObject("btnQutarPDF.Image")));
+            this.btnQutarPDF.Location = new System.Drawing.Point(684, 272);
+            this.btnQutarPDF.Name = "btnQutarPDF";
+            this.btnQutarPDF.Size = new System.Drawing.Size(22, 19);
+            this.btnQutarPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnQutarPDF.TabIndex = 33;
+            this.btnQutarPDF.TabStop = false;
+            this.btnQutarPDF.Visible = false;
+            this.btnQutarPDF.Click += new System.EventHandler(this.btnQutarPDF_Click);
+            // 
+            // pbPDF
+            // 
+            this.pbPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbPDF.Image = ((System.Drawing.Image)(resources.GetObject("pbPDF.Image")));
+            this.pbPDF.Location = new System.Drawing.Point(509, 181);
+            this.pbPDF.Name = "pbPDF";
+            this.pbPDF.Size = new System.Drawing.Size(62, 75);
+            this.pbPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPDF.TabIndex = 30;
+            this.pbPDF.TabStop = false;
+            this.pbPDF.Visible = false;
+            // 
+            // pbINE
+            // 
+            this.pbINE.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pbINE.Image = global::CreditoDepartamental.Properties.Resources.ine;
+            this.pbINE.Location = new System.Drawing.Point(60, 175);
+            this.pbINE.Name = "pbINE";
+            this.pbINE.Size = new System.Drawing.Size(276, 142);
+            this.pbINE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbINE.TabIndex = 27;
+            this.pbINE.TabStop = false;
+            this.pbINE.Visible = false;
+            // 
             // ApplyForCredit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -361,10 +361,10 @@
             this.Controls.Add(this.lblLineP);
             this.Name = "ApplyForCredit";
             this.Text = "ApplyForCredit";
-            ((System.ComponentModel.ISupportInitialize)(this.pbINE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPDF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnQutarPDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuitarINE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQutarPDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbINE)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

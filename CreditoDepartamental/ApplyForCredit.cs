@@ -30,22 +30,17 @@ namespace CreditoDepartamental
             pbINE.VisibleChanged += (s, e) => ValidarCampos();
             btnSolicitud.Enabled = false;
         }
-        private bool isActive = false;
 
         private void txtFullName_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && e.KeyChar != (char)Keys.Back)
-                isActive = true;
-            else
-                isActive = false;
+                e.Handled = true;
         }
 
         private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
-                isActive = true;
-            else
-                isActive = false;
+                e.Handled = true;
         }
 
         private void txtMail_KeyPress(object sender, KeyPressEventArgs e)
@@ -57,22 +52,17 @@ namespace CreditoDepartamental
                 bool isEmail = Regex.IsMatch(email, pattern);
 
                 if (isEmail)
-                    isActive = true;
-                else
-                    isActive = false;
+                    e.Handled = true;
             }
         }
 
         private void txtSalary_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != (char)Keys.Back)
-                isActive = true;
-            else
-                isActive = false;
-            if (e.KeyChar == '.' && (sender as TextBox).Text.Contains("."))
-            {
                 e.Handled = true;
-            }
+
+            if (e.KeyChar == '.' && (sender as TextBox).Text.Contains("."))
+                e.Handled = true;
         }
 
         private void ConfigurarDateTimePicker()

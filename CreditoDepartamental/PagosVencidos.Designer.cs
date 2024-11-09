@@ -35,11 +35,13 @@
             this.DiasRetraso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MontoConMulta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPagar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagosVencidos)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPagosVencidos
             // 
+            this.dgvPagosVencidos.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvPagosVencidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPagosVencidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPagosVencidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -49,7 +51,7 @@
             this.DiasRetraso,
             this.MontoConMulta,
             this.btnPagar});
-            this.dgvPagosVencidos.Location = new System.Drawing.Point(33, 38);
+            this.dgvPagosVencidos.Location = new System.Drawing.Point(33, 65);
             this.dgvPagosVencidos.Name = "dgvPagosVencidos";
             this.dgvPagosVencidos.RowHeadersWidth = 51;
             this.dgvPagosVencidos.RowTemplate.Height = 24;
@@ -93,18 +95,33 @@
             this.btnPagar.MinimumWidth = 6;
             this.btnPagar.Name = "btnPagar";
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(279, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 39);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Pagos Vencidos";
+            // 
             // PagosVencidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(834, 466);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvPagosVencidos);
             this.Name = "PagosVencidos";
             this.Text = "PagosVencidos";
             this.Load += new System.EventHandler(this.PagosVencidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPagosVencidos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,5 +134,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DiasRetraso;
         private System.Windows.Forms.DataGridViewTextBoxColumn MontoConMulta;
         private System.Windows.Forms.DataGridViewButtonColumn btnPagar;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="ApplyForCredit.Designer.cs">
       <DependentUpon>ApplyForCredit.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreditIncrease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditIncrease.Designer.cs">
+      <DependentUpon>CreditIncrease.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControlers\CustomProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="Electronicos.Designer.cs">
       <DependentUpon>Electronicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FechaCorte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FechaCorte.Designer.cs">
+      <DependentUpon>FechaCorte.cs</DependentUpon>
     </Compile>
     <Compile Include="FormProcesando.cs">
       <SubType>Form</SubType>
@@ -102,6 +114,12 @@
     <Compile Include="CustomControlers\CustomDatePicker.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ProximosPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProximosPagos.Designer.cs">
+      <DependentUpon>ProximosPagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Singup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,11 +129,17 @@
     <EmbeddedResource Include="ApplyForCredit.resx">
       <DependentUpon>ApplyForCredit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreditIncrease.resx">
+      <DependentUpon>CreditIncrease.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Deportes.resx">
       <DependentUpon>Deportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Electronicos.resx">
       <DependentUpon>Electronicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FechaCorte.resx">
+      <DependentUpon>FechaCorte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProcesando.resx">
       <DependentUpon>FormProcesando.cs</DependentUpon>
@@ -151,6 +175,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ProximosPagos.resx">
+      <DependentUpon>ProximosPagos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Singup.resx">
       <DependentUpon>Singup.cs</DependentUpon>
     </EmbeddedResource>
